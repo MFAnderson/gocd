@@ -1,0 +1,9 @@
+java_library(
+    name = 'licensing',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//base:base",
+        "//lib:bcprov-jdk15on"
+        ],
+    visibility = ['PUBLIC']
+)

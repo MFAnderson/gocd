@@ -1,0 +1,12 @@
+java_library(
+    name = 'agent-common',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//base:base",
+        "//lib:log4j",
+        "//lib:commons-logging",
+        "//lib:commons-io",
+        "//lib:commons-httpclient",
+    ],
+    visibility = ['PUBLIC']
+)

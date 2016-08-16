@@ -1,0 +1,12 @@
+java_library(
+    name = 'app-server',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//base:base",
+        "//lib:javax.servlet-api",
+        "//lib:log4j",
+        "//lib:commons-beanutils-core",
+        "//lib:commons-validator",
+    ],
+    visibility = ['PUBLIC']
+)

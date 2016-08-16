@@ -1,0 +1,17 @@
+java_library(
+    name = 'util',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+            "//base:base",
+            "//lib:commons-collections",
+            "//lib:spring-context",
+            "//lib:spring-webmvc",
+            "//lib:javax.servlet-api",
+            "//lib:gson",
+            "//lib:log4j",
+            "//lib:joda-time",
+            "//lib:commons-lang",
+            "//lib:commons-io"
+        ],
+    visibility = ['PUBLIC']
+)

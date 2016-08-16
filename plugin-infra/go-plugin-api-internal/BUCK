@@ -1,0 +1,5 @@
+java_library(
+    name = 'go-plugin-api-internal',
+    srcs = glob(['src/**/*.java']),
+    visibility = ['PUBLIC']
+    )

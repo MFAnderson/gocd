@@ -1,0 +1,18 @@
+java_library(
+    name = 'go-plugin-access',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//plugin-infra/go-plugin-infra:go-plugin-infra",
+        "//util:util",
+        "//plugin-infra/go-plugin-api:go-plugin-api",
+        "//base:base",
+        "//lib:spring-context",
+        "//lib:spring-beans",
+        "//lib:log4j",
+        "//lib:gson",
+        "//lib:commons-lang", 
+        "//plugin-infra/go-plugin-api-internal:go-plugin-api-internal",
+        "//lib:commons-collections",
+        ],
+    visibility = ['PUBLIC']
+)

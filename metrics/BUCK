@@ -1,0 +1,14 @@
+java_library(
+    name = 'metrics',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//base:base",
+        "//lib:metrics-core",
+        "//lib:metrics-servlet",
+        "//lib:jackson-databind",
+        "//lib:jackson-annotations",
+        "//lib:spring-context",
+        "//lib:spring-beans",
+    ],
+    visibility = ['PUBLIC']
+)

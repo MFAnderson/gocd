@@ -1,0 +1,27 @@
+java_library(
+    name = 'agent',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//agent-common:agent-common",
+        "//common:common",
+        "//lib:objenesis",
+        "//lib:bcprov-jdk15on",
+        "//config/config-api:config-api",
+        "//plugin-infra/go-plugin-access:go-plugin-access",
+        "//plugin-infra/go-plugin-infra:go-plugin-infra",
+        "//plugin-infra/go-plugin-api:go-plugin-api",
+        "//base:base",
+        "//lib:spring-tx",
+        "//lib:spring-context",
+        "//lib:spring-beans",
+        "//lib:log4j",
+        "//lib:commons-logging",
+        "//lib:commons-io",
+        "//lib:commons-httpclient",
+        "//lib:spring-core",
+        "//lib:spring-web",
+        "//lib:commons-lang",
+        "//lib:aopalliance"
+    ],
+    visibility = ['PUBLIC']
+)

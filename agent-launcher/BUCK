@@ -1,0 +1,11 @@
+java_library(
+    name = 'agent-launcher',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//agent-common:agent-common",
+        "//base:base",
+        "//lib:commons-logging",
+        "//lib:commons-io",
+    ],
+    visibility = ['PUBLIC']
+)

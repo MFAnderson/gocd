@@ -1,0 +1,10 @@
+java_library(
+    name = 'go-plugin-activator',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//plugin-infra/go-plugin-api:go-plugin-api",
+        "//plugin-infra/go-plugin-api-internal:go-plugin-api-internal",
+        "//lib:org.apache.felix.framework"
+    ],
+    visibility = ['PUBLIC']
+)

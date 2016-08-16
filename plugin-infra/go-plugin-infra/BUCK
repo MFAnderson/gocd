@@ -1,0 +1,23 @@
+java_library(
+    name = 'go-plugin-infra',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+        "//base:base",
+        "//util:util",
+        "//plugin-infra/go-plugin-activator:go-plugin-activator",
+        "//plugin-infra/go-plugin-api:go-plugin-api",
+        "//plugin-infra/go-plugin-api-internal:go-plugin-api-internal",
+        "//lib:spring-context",
+        "//lib:commons-collections",
+        "//lib:commons-digester",
+        "//lib:slf4j-log4j12",
+        "//lib:gson",
+        "//lib:org.apache.felix.framework",
+        "//lib:log4j",
+        "//lib:commons-io",
+        "//lib:commons-httpclient",
+        "//lib:commons-codec",
+        "//lib:spring-beans"
+    ],
+    visibility = ['PUBLIC']
+)

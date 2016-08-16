@@ -1,0 +1,8 @@
+java_library(
+    name = 'db',
+    srcs = glob(['src/**/*.java']),
+    deps = [
+
+    ],
+    visibility = ['PUBLIC']
+)
